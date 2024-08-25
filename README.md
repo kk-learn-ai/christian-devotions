@@ -43,6 +43,8 @@ Agent configurations and tasks are defined in a single YAML file located in the 
 - `devotional_config.yml`: Defines roles, goals, backstories, and tasks for each agent in the system.
 
 ## Key Features
+- Streamlit Interface: User-friendly web interface for interacting with the devotional creation system.
+- OpenAI API Integration: Utilizes OpenAI's powerful language models for content generation.
 - Dynamic theme selection: The Project Manager asks the user for the theme of each devotional series.
 - Audience-focused content: Content is tailored to specific target audiences identified through brainstorming.
 - Collaborative workflow: Cross-team collaboration is facilitated to ensure cohesive and high-quality devotional content.
@@ -62,14 +64,15 @@ pip install -r requirements.txt
 This will install all necessary packages, including the OpenAI library.
 
 4. Set up your OpenAI API key:
-- You will be prompted to enter your OpenAI API key when running the script for the first time.
-- Alternatively, you can set it as an environment variable named `OPENAI_API_KEY`.
+- You will be prompted to enter your OpenAI API key when running the Streamlit app.
+- The key will be securely stored for the duration of your session.
 
 ## Usage
-To run the project:
+To run the project with the Streamlit interface:
 ```
-python main.py
+streamlit run main.py
 ```
+This will start a local server and open the app in your default web browser.
 
 ## Usage
 [Include instructions on how to run the project, dependencies, etc.]
