@@ -18,8 +18,7 @@ christian-devotions
 │ ├── project_manager/
 │ └── legal_advisor/
 ├── config/
-│ ├── devotional_agents.yml
-│ └── devotional_tasks.yml
+│ ├── devotional_config.yml
 └── README.md
 ```
 
@@ -32,12 +31,17 @@ Responsible for developing inspiring and theologically sound devotional content 
 Oversees the refinement and quality assurance of devotional content, ensuring clarity, consistency, and audience-appropriate language.
 
 ### Project Management
-Facilitates coordination among teams and ensures timely delivery of devotional content while maintaining legal compliance.
+Facilitates coordination among teams and proposes web publication timeline for devotional content upon completion of content creation, editorial review, and social media preparation.
 
 ## Configuration
-Agent configurations and tasks are defined in YAML files located in the `config/` directory:
-- `devotional_agents.yml`: Defines roles, goals, and backstories for each agent.
-- `devotional_tasks.yml`: Outlines specific tasks for each agent role.
+Agent configurations and tasks are defined in a single YAML file located in the `config/` directory:
+- `devotional_config.yml`: Defines roles, goals, backstories, and tasks for each agent in the system.
+
+## Key Features
+- Dynamic theme selection: The Project Manager asks the user for the theme of each devotional series.
+- Audience-focused content: Content is tailored to specific target audiences identified through brainstorming.
+- Collaborative workflow: Cross-team collaboration is facilitated to ensure cohesive and high-quality devotional content.
+- Flexible publication timeline: The Project Manager suggests publication timelines based on team progress and standard durations.
 
 ## Usage
 [Include instructions on how to run the project, dependencies, etc.]
@@ -46,5 +50,12 @@ Agent configurations and tasks are defined in YAML files located in the `config/
 [Include guidelines for contributing to the project]
 
 ## License
-[Specify the project's license]
+This project is licensed under the MIT License. 
+
+The MIT License is a permissive license that allows for reuse of this software in proprietary projects provided the license text is included. It's simple and compatible with many other licenses, making it ideal for open source projects.
+
+Key points of the MIT License:
+- You can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
+- You must include the copyright notice and the LICENSE file in all copies or substantial portions of the software.
+- The software is provided "as is", without warranty of any kind.
 
