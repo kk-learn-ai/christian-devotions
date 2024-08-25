@@ -19,6 +19,11 @@ christian-devotions
 │ └── legal_advisor/
 ├── config/
 │ ├── devotional_config.yml
+└── utils/
+│   ├── __init__.py
+│   └── api_key_utils.py
+├── main.py
+├── requirements.txt
 └── README.md
 ```
 
@@ -42,6 +47,29 @@ Agent configurations and tasks are defined in a single YAML file located in the 
 - Audience-focused content: Content is tailored to specific target audiences identified through brainstorming.
 - Collaborative workflow: Cross-team collaboration is facilitated to ensure cohesive and high-quality devotional content.
 - Flexible publication timeline: The Project Manager suggests publication timelines based on team progress and standard durations.
+
+## Installation and Setup
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory:
+```
+cd christian-devotions
+```
+3. Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+This will install all necessary packages, including the OpenAI library.
+
+4. Set up your OpenAI API key:
+- You will be prompted to enter your OpenAI API key when running the script for the first time.
+- Alternatively, you can set it as an environment variable named `OPENAI_API_KEY`.
+
+## Usage
+To run the project:
+```
+python main.py
+```
 
 ## Usage
 [Include instructions on how to run the project, dependencies, etc.]
